@@ -109,6 +109,11 @@ function! test#strategy#vtr(cmd) abort
   call VtrSendCommand(s:pretty_command(a:cmd), 1)
 endfunction
 
+function! test#strategy#tmuxrun(cmd) abort
+  let g:cmd = s:pretty_command(a:cmd)
+  lua require("tmuxrun.api").sendCommand(vim.g.cmd, { ensureTarget = true })
+endfunction
+
 function! test#strategy#vimux(cmd) abort
   if exists('g:test#preserve_screen') && !g:test#preserve_screen
     call VimuxClearTerminalScreen()
