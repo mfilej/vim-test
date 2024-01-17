@@ -726,6 +726,7 @@ Copyright © Janko Marohnić. Distributed under the same terms as Vim itself. Se
 
 [minitest]: https://github.com/vim-test/vim-test/wiki/Minitest
 [Neoterm]: https://github.com/kassio/neoterm
+[Toggleterm]: https://github.com/akinsho/toggleterm.nvim
 [Floaterm]: https://github.com/voldikss/vim-floaterm
 [Neomake]: https://github.com/neomake/neomake
 [Dispatch]: https://github.com/tpope/vim-dispatch
